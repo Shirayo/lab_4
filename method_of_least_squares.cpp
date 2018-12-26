@@ -7,7 +7,7 @@
 //
 #include <iostream>
 #include <cmath>
-#include "method_of_least_squares.hpp"
+#include "method_of_least_squares.h"
 #include <vector>
 #include <fstream>
 #include <iomanip>
@@ -28,7 +28,10 @@ void check_file_for_points(vector<vector<double>> &points, string &file_with_poi
 		system("pause");
 		exit(0);
 	}
+	string name;
 	for (size_t i = 0; i < 11; i++) {
+		fin >> name;
+		fin >> name;
 		for (size_t j = 0; j < 2; j++) {
 			fin >> points[i][j];
 			cout << setw(15) << points[i][j];
